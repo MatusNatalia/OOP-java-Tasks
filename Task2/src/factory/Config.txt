@@ -1,9 +1,0 @@
-POP Pop
-PUSH Push
-+ Plus
-- Minus
-* Mult
-/ Div
-SQRT Sqrt
-PRINT Print
-DEFINE Define
