@@ -2,7 +2,7 @@ import calculator.*;
 
 public class Main {
     public static void main(String[] args) {
-        String filename = "C:\\Users\\nemat\\IdeaProjects\\Task2\\src\\calculator\\test.txt";
+        String filename = args[0];
         try {
             Calculator calculator = new Calculator(filename);
             calculator.calculate();
