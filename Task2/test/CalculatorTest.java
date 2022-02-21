@@ -15,7 +15,7 @@ class CalculatorTest {
         Calculator calculator = new Calculator(CalculatorTest.class.getResourceAsStream("test.txt"));
         System.setOut(new PrintStream(output));
         calculator.calculate();
-        assertTrue(output.toString().startsWith("-0,222222"));
+        assertTrue(output.toString().startsWith("3,000000"));
         System.setOut(null);
     }
 }

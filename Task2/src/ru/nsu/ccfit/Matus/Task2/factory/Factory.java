@@ -47,7 +47,7 @@ public class Factory {
             else {
                 Command command = null;
                 try {
-                    command = (Command) Class.forName("commands." + className).newInstance();
+                    command = (Command) Class.forName("ru.nsu.ccfit.Matus.Task2.commands." + className).newInstance();
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
                 }

@@ -5,11 +5,7 @@ PUSH 4
 POP
 PUSH a
 *
-PUSHH 2
-+
 PUSH 1
--
-PUSH 4
++
 SQRT
-/
 PRINT
