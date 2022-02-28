@@ -1,0 +1,11 @@
+DEFINE a 4
+PUSH 2
+#test
+PUSH 4
+POP
+PUSH a
+*
+PUSH 1
++
+SQRT
+PRINT

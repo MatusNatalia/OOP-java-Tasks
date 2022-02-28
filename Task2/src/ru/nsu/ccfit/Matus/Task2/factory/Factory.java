@@ -1,60 +1,34 @@
 
-package ru.nsu.ccfit.Matus.Task2.factory;
+package ru.nsu.ccfit.matus.task2.factory;
 
-import ru.nsu.ccfit.Matus.Task2.exceptions.CommandNotFound;
-import ru.nsu.ccfit.Matus.Task2.commands.*;
+import ru.nsu.ccfit.matus.task2.exceptions.CommandNotFound;
+import ru.nsu.ccfit.matus.task2.commands.*;
 
+import java.io.IOException;
 import java.io.InputStream;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.util.Properties;
 
 public class Factory {
 
-    private HashMap<String, String> commandList;
+    private Properties commandList = new Properties();
 
-    public Factory() {
-        String config = null;
-        InputStream stream = null;
-        try {
-            config = "Config.txt";
-            stream = Factory.class.getResourceAsStream(config);
-            if (stream == null) {
-                throw new NullPointerException();
-            }
-        } catch (NullPointerException e) {
+    public Factory() throws IOException {
+        String config = "Config.txt";
+        InputStream stream = Factory.class.getResourceAsStream(config);
+        if (stream == null) {
             System.out.println("File '" + config + "' not found");
-        } finally {
-            if (stream != null) {
-                Scanner scanner = new Scanner(stream);
-                scanner.useDelimiter("\s|\r\n");
-                commandList = new HashMap<>();
-                while (scanner.hasNext()) {
-                    commandList.put(scanner.next(), scanner.next());
-                }
-            }
+        } else {
+            commandList.load(stream);
         }
     }
 
-    public Command make_command(String name) throws CommandNotFound {
-        if (commandList == null || commandList.isEmpty()) {
-            throw new NullPointerException();
-        }
-        else {
-            String className = commandList.get(name);
-            if (className == null) {
-                throw new CommandNotFound(name);
-            }
-            else {
-                Command command = null;
-                try {
-                    command = (Command) Class.forName("ru.nsu.ccfit.Matus.Task2.commands." + className).newInstance();
-                } catch (Exception e) {
-                    System.out.println(e.getMessage());
-                }
-                return command;
-            }
+    public Command makeCommand(String name) throws CommandNotFound {
+        String className = commandList.getProperty(name);
+        try {
+            return (Command) Class.forName("ru.nsu.ccfit.matus.task2.commands." + className).newInstance();
+        } catch (Exception e) {
+            throw new CommandNotFound(name, e);
         }
     }
-
 }
 

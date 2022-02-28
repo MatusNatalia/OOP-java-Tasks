@@ -1,7 +1,7 @@
-package ru.nsu.ccfit.Matus.Task2.commands;
+package ru.nsu.ccfit.matus.task2.commands;
 
-import ru.nsu.ccfit.Matus.Task2.calculator.Context;
-import ru.nsu.ccfit.Matus.Task2.exceptions.*;
+import ru.nsu.ccfit.matus.task2.calculator.Context;
+import ru.nsu.ccfit.matus.task2.exceptions.*;
 
 public class Define implements Command{
     @Override

@@ -1,6 +1,6 @@
-package ru.nsu.ccfit.Matus.Task2.calculator;
+package ru.nsu.ccfit.matus.task2.calculator;
 
-import ru.nsu.ccfit.Matus.Task2.exceptions.StackException;
+import ru.nsu.ccfit.matus.task2.exceptions.StackException;
 
 import java.util.EmptyStackException;
 import java.util.HashMap;
@@ -41,15 +41,15 @@ public class Context {
     }
 
     public void define(String s, Double d){
-        constants.put(s, d);
+        constants.put(s.trim(), d);
     }
 
     public boolean contains(String s){
-        return constants.containsKey(s);
+        return constants.containsKey(s.trim());
     }
 
     public Double get(String s){
-        return constants.get(s);
+        return constants.get(s.trim());
     }
 
 }

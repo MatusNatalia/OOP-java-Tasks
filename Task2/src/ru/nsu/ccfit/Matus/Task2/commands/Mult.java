@@ -1,8 +1,8 @@
-package ru.nsu.ccfit.Matus.Task2.commands;
+package ru.nsu.ccfit.matus.task2.commands;
 
-import ru.nsu.ccfit.Matus.Task2.calculator.Context;
-import ru.nsu.ccfit.Matus.Task2.exceptions.StackException;
-import ru.nsu.ccfit.Matus.Task2.exceptions.WrongArguments;
+import ru.nsu.ccfit.matus.task2.calculator.Context;
+import ru.nsu.ccfit.matus.task2.exceptions.StackException;
+import ru.nsu.ccfit.matus.task2.exceptions.WrongArguments;
 
 public class Mult implements Command{
     @Override

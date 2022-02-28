@@ -1,5 +1,5 @@
-package ru.nsu.ccfit.Matus.Task2;
-import ru.nsu.ccfit.Matus.Task2.calculator.Calculator;
+package ru.nsu.ccfit.matus.task2;
+import ru.nsu.ccfit.matus.task2.calculator.Calculator;
 
 public class Main {
     public static void main(String[] args) {

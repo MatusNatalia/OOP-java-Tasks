@@ -1,10 +1,10 @@
-2022-02-21 12:54:10.132 [main] INFO  calcLog - Executing line: [DEFINE, a, 4]
-2022-02-21 12:54:10.132 [main] INFO  calcLog - Executing line: [PUSH, 2]
-2022-02-21 12:54:10.132 [main] INFO  calcLog - Executing line: [PUSH, 4]
-2022-02-21 12:54:10.132 [main] INFO  calcLog - Executing line: [POP]
-2022-02-21 12:54:10.132 [main] INFO  calcLog - Executing line: [PUSH, a]
-2022-02-21 12:54:10.132 [main] INFO  calcLog - Executing line: [*]
-2022-02-21 12:54:10.132 [main] INFO  calcLog - Executing line: [PUSH, 1]
-2022-02-21 12:54:10.132 [main] INFO  calcLog - Executing line: [+]
-2022-02-21 12:54:10.132 [main] INFO  calcLog - Executing line: [SQRT]
-2022-02-21 12:54:10.132 [main] INFO  calcLog - Executing line: [PRINT]
+2022-02-28 14:08:50.441 [main] INFO  ru.nsu.ccfit.matus.task2.calculator.Calculator - Executing line: [DEFINE, a, 4]
+2022-02-28 14:08:50.441 [main] INFO  ru.nsu.ccfit.matus.task2.calculator.Calculator - Executing line: [PUSH, 2]
+2022-02-28 14:08:50.441 [main] INFO  ru.nsu.ccfit.matus.task2.calculator.Calculator - Executing line: [PUSH, 4]
+2022-02-28 14:08:50.441 [main] INFO  ru.nsu.ccfit.matus.task2.calculator.Calculator - Executing line: [POP]
+2022-02-28 14:08:50.441 [main] INFO  ru.nsu.ccfit.matus.task2.calculator.Calculator - Executing line: [PUSH, a]
+2022-02-28 14:08:50.441 [main] INFO  ru.nsu.ccfit.matus.task2.calculator.Calculator - Executing line: [*]
+2022-02-28 14:08:50.441 [main] INFO  ru.nsu.ccfit.matus.task2.calculator.Calculator - Executing line: [PUSH, 1]
+2022-02-28 14:08:50.441 [main] INFO  ru.nsu.ccfit.matus.task2.calculator.Calculator - Executing line: [+]
+2022-02-28 14:08:50.441 [main] INFO  ru.nsu.ccfit.matus.task2.calculator.Calculator - Executing line: [SQRT]
+2022-02-28 14:08:50.441 [main] INFO  ru.nsu.ccfit.matus.task2.calculator.Calculator - Executing line: [PRINT]
