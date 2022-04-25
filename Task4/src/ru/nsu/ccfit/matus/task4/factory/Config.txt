@@ -1,0 +1,8 @@
+EngineStorageSize 3
+CarBodyStorageSize 3
+AccessoryStorageSize 3
+AccessorySuppliers 2
+CarStorageSize 3
+Workers 2
+Dealers 2
+Log 1
